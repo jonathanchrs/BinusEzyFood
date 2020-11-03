@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#304057">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        
+        <Button
+            android:id="@+id/btn_myOrderMain"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium"
+            android:text="MyOrder"
+            android:letterSpacing="0.1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/rounded_button"
+            android:textSize="7pt"
+            android:textColor="#ffff"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <Button
+            android:id="@+id/btn_drinks"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:text="Drinks"
+            android:background="@drawable/rounded_drink_category"
+            android:textColor="#ffff"
+            android:textSize="10pt"
+            android:letterSpacing="0.1"
+            android:textAllCaps="false"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="100dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_snacks"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:text="Snacks"
+            android:background="@drawable/rounded_snack_category"
+            android:textColor="#ffff"
+            android:textSize="10pt"
+            android:letterSpacing="0.1"
+            android:layout_alignParentTop="true"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="100dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_foods"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:text="Foods"
+            android:background="@drawable/rounded_food_category"
+            android:textColor="#ffff"
+            android:textSize="10pt"
+            android:letterSpacing="0.1"
+            android:textAllCaps="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="185dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_topUp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:text="TopUp"
+            android:background="@drawable/rounded_top_up_catefory"
+            android:textColor="#ffff"
+            android:textSize="10pt"
+            android:letterSpacing="0.1"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="185dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    android:orientation="vertical"
+    android:background="#304057">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/btn_MyOrder"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium"
+            android:text="MyOrder"
+            android:letterSpacing="0.1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/rounded_button"
+            android:textSize="7pt"
+            android:textColor="#ffff"
+            android:onClick="toMyOrder"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text=""
+            android:textColor="#ffff"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="10pt"
+            android:letterSpacing="0.1"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:background="#EA9465"/>
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text=""
+            android:textColor="#ffff"
+            android:letterSpacing="0.1"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="7pt"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_box_order"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:paddingTop="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:inputType="number"
+            android:background="@drawable/fill_box"/>
+
+        <Button
+            android:id="@+id/btn_OrderMore"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium"
+            android:text="Order More"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/rounded_button"
+            android:textSize="7pt"
+            android:textColor="#ffff"
+            android:onClick="orderMore" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
