@@ -47,8 +47,9 @@ public class TopUpActivity extends AppCompatActivity {
         btnMyOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(TopUpActivity.this, MyOrderActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(TopUpActivity.this, MyOrderActivity.class);
+                intent.putExtra("orderList", orderListTopUp);
+                startActivity(intent);
             }
         });
     }

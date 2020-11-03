@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnDrink, btnFoods, btnSnacks, btnTopUp, btnMyOrder;
     private Boolean isExist = false;
+    private ArrayList<Order> orderListInit = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,8 +64,9 @@ public class MainActivity extends AppCompatActivity {
         btnMyOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this, MyOrderActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, MyOrderActivity.class);
+                intent.putExtra("orderList", orderListInit);
+                startActivity(intent);
             }
         });
     }

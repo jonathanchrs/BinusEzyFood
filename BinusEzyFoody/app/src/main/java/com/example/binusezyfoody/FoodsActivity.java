@@ -47,8 +47,9 @@ public class FoodsActivity extends AppCompatActivity {
         btnMyOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(FoodsActivity.this, MyOrderActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(FoodsActivity.this, MyOrderActivity.class);
+                intent.putExtra("orderList", orderListFood);
+                startActivity(intent);
             }
         });
 
