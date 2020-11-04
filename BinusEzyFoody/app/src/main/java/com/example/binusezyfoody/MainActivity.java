@@ -20,6 +20,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if(getIntent().getBooleanExtra("isExist", false)){
+            isExist = false;
+        }
+        else {
+            isExist = false;
+        }
+
         btnDrink = findViewById(R.id.btn_drinks);
         btnDrink.setOnClickListener(new View.OnClickListener() {
             @Override

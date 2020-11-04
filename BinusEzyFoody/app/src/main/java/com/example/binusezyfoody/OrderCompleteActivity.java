@@ -18,6 +18,7 @@ public class OrderCompleteActivity extends AppCompatActivity {
     private ArrayList<Order> orderArrayList;
     private TextView tvTotalPrice;
     private Button btnMainMenu;
+    private Boolean isExist = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +48,7 @@ public class OrderCompleteActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(OrderCompleteActivity.this, MainActivity.class);
+                intent.putExtra("isExist", isExist);
                 startActivity(intent);
             }
         });
